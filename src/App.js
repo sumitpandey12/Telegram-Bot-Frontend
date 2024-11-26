@@ -9,7 +9,9 @@ function App() {
   const user = useSelector((state) => state.auth.user);
   useEffect(() => {
     if (!user) {
-      window.location.href = "/auth";
+      if (window.location.pathname !== "/auth") {
+        window.location.href = "/auth";
+      }
     }
   }, []);
 

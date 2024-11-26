@@ -1,5 +1,6 @@
 import axios from "axios";
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL =
+  "https://telegram-bot-backend-9dsfekhh4-sumitpandey12s-projects.vercel.app";
 
 class ApiClient {
   constructor(baseURL = API_BASE_URL) {
